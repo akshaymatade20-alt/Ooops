@@ -1,0 +1,39 @@
+interface Payment {
+
+ void pay(double amount);
+
+}
+
+abstract class PaymentGateway implements Payment {
+
+ void show() {
+
+ System.out.println("Processing Payment...");
+
+ }
+
+}
+
+class UPI extends PaymentGateway {
+
+ public void pay(double amount) {
+
+ show();
+
+ System.out.println("Paid " + amount + " via UPI");
+
+ }
+
+}
+
+public class Main {
+
+ public static void main(String[] args) {
+
+ Payment p = new UPI();
+
+ p.pay(800);
+
+ }
+
+}
