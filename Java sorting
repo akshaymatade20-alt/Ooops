@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class SortLists {
+
+ public static void main(String[] args) {
+
+ // i) List of Integers
+
+ List<Integer> numbers = new ArrayList<>();
+
+ numbers.add(45);
+
+ numbers.add(12);
+
+ numbers.add(78);
+
+ numbers.add(3);
+
+ numbers.add(25);
+
+ System.out.println("Original Integer List: " + numbers);
+
+ Collections.sort(numbers); // Sorting integers
+
+ System.out.println("Sorted Integer List: " + numbers);
+
+ // ii) List of Names
+
+ List<String> names = new ArrayList<>();
+
+ names.add("Malhar");
+
+ names.add("Vedant");
+
+ names.add("Akshay");
+
+ names.add("Yash");
+
+ System.out.println("\nOriginal Name List: " + names);
+
+ Collections.sort(names); // Sorting names alphabetically
+
+ System.out.println("Sorted Name List: " + names);
+
+ }
+
+}
