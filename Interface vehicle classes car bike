@@ -1,0 +1,69 @@
+interface Vehicle {
+
+ void start();
+
+ void stop();
+
+}
+
+// Car class implementing Vehicle interface
+
+class Car implements Vehicle {
+
+ public void start() {
+
+ System.out.println("Car starts with a key.");
+
+ }
+
+ public void stop() {
+
+ System.out.println("Car stops using brakes.");
+
+ }
+
+}
+
+// Bike class implementing Vehicle interface
+
+class Bike implements Vehicle {
+
+ public void start() {
+
+ System.out.println("Bike starts with a kick or self-start.");
+
+ }
+
+ public void stop() {
+
+ System.out.println("Bike stops using brakes.");
+
+ }
+
+}
+
+// Main class
+
+public class VehicleTest {
+
+ public static void main(String[] args) {
+
+ Vehicle v1 = new Car();
+
+ Vehicle v2 = new Bike();
+
+ System.out.println("Car Details:");
+
+ v1.start();
+
+ v1.stop();
+
+ System.out.println("\nBike Details:");
+
+ v2.start();
+
+ v2.stop();
+
+ }
+
+}
